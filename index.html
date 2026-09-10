@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header>
+<header class="header--transparent" id="siteHeader">
   <div class="wrap nav">
     <a href="#top" class="logo">
       <span class="mark">DN</span>
@@ -47,27 +47,18 @@
 
 <main id="top">
 
-  <!-- HERO -->
-  <section class="hero" style="padding-bottom:150px;">
+  <!-- HERO: full-bleed photo banner -->
+  <section class="hero">
     <div class="wrap">
       <div class="hero-grid">
-        <div>
-          <span class="eyebrow-pill">Nairobi, Kenya · Installation & Service engineering</span>
-          <h1>Denrova Service Limited.</h1>
-          <p class="lede">Denrova Engineering Services Limited maintains, automates, installs and commissions the machinery, control systems, lifts and escalators that manufacturers and facility operators depend on every day.</p>
-          <div class="hero-actions">
-            <a href="#divisions" class="btn-primary">Explore our divisions</a>
-            <a href="#contact" class="btn-secondary">Reach out to our Team</a>
-          </div>
+        <span class="eyebrow-pill">Nairobi, Kenya · Installation &amp; Service engineering</span>
+        <h1>Engineering that keeps Kenya's plants and buildings running.</h1>
+        <p class="lede">Denrova Engineering Services Limited maintains, automates, installs and commissions the machinery, control systems, lifts and escalators that manufacturers and facility operators depend on every day.</p>
+        <div class="hero-actions">
+          <a href="#divisions" class="btn-primary">Explore our divisions</a>
+          <a href="#contact" class="btn-secondary">Reach out to our team</a>
         </div>
-        <figure class="hero-figure">
-          <img src="images/engineer-at-work.jpg" alt="Denrova field engineer carefully working on equipment on the production floor">
-          <figcaption>On the floor with our engineers, every day</figcaption>
-        </figure>
       </div>
-    </div>
-    <div class="hero-wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 40C240 90 480 90 720 55C960 20 1200 5 1440 40V90H0V40Z" fill="var(--bg)"/></svg>
     </div>
   </section>
 
@@ -90,50 +81,82 @@
       </div>
       <div class="division-grid">
         <div class="division">
-          <div class="icon"><svg viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="8" stroke="var(--blue-deep)" stroke-width="1.8"/><circle cx="13" cy="13" r="3" fill="var(--blue-deep)"/></svg></div>
-          <div class="tag">DIVISION 01</div>
-          <h3>Industrial Maintenance &amp; Machinery</h3>
-          <p>Preventive and corrective maintenance for production machinery, conveyors, pumps and rotating equipment. Purpose built to hold uptime steady and cut unplanned downtime.</p>
-          <ul class="includes">
-            <li>Preventive &amp; corrective maintenance programs</li>
-            <li>Plant maintenance contracts</li>
-            <li>Supply of industrial spare parts</li>
-          </ul>
+          <div class="division__media">
+            <img src="images/control-panel-wiring.jpg" alt="Numbered terminal block wiring inside an industrial control cabinet">
+          </div>
+          <div class="division__badge"><svg viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="8" stroke="var(--blue-deep)" stroke-width="1.8"/><circle cx="13" cy="13" r="3" fill="var(--blue-deep)"/></svg></div>
+          <div class="division__body">
+            <div class="tag">DIVISION 01</div>
+            <h3>Industrial Maintenance &amp; Machinery</h3>
+            <p>Preventive and corrective maintenance for production machinery, conveyors, pumps and rotating equipment. Purpose built to hold uptime steady and cut unplanned downtime.</p>
+            <ul class="includes">
+              <li>Preventive &amp; corrective maintenance programs</li>
+              <li>Plant maintenance contracts</li>
+              <li>Supply of industrial spare parts</li>
+            </ul>
+          </div>
         </div>
         <div class="division">
-          <div class="icon"><svg viewBox="0 0 26 26" fill="none"><rect x="6" y="4" width="14" height="18" rx="3" stroke="var(--blue-deep)" stroke-width="1.8"/><circle cx="13" cy="9" r="1.6" fill="var(--blue-deep)"/><path d="M9 14H17M9 17H14" stroke="var(--blue-deep)" stroke-width="1.6"/></svg></div>
-          <div class="tag">DIVISION 02</div>
-          <h3>Automation &amp; Control Systems</h3>
-          <p>PLC and SCADA programming, control panel builds and process automation that bring precision and remote visibility to plant operations.</p>
-          <ul class="includes">
-            <li>Industrial automation &amp; process control</li>
-            <li>PLC and control system programming</li>
-            <li>Panel building &amp; control retrofits</li>
-          </ul>
+          <div class="division__media">
+            <img src="images/vfd-drive.jpg" alt="Allen-Bradley variable frequency drive mounted in a control panel">
+          </div>
+          <div class="division__badge"><svg viewBox="0 0 26 26" fill="none"><rect x="6" y="4" width="14" height="18" rx="3" stroke="var(--blue-deep)" stroke-width="1.8"/><circle cx="13" cy="9" r="1.6" fill="var(--blue-deep)"/><path d="M9 14H17M9 17H14" stroke="var(--blue-deep)" stroke-width="1.6"/></svg></div>
+          <div class="division__body">
+            <div class="tag">DIVISION 02</div>
+            <h3>Automation &amp; Control Systems</h3>
+            <p>PLC and SCADA programming, control panel builds and process automation that bring precision and remote visibility to plant operations.</p>
+            <ul class="includes">
+              <li>Industrial automation &amp; process control</li>
+              <li>PLC and control system programming</li>
+              <li>Panel building &amp; control retrofits</li>
+            </ul>
+          </div>
         </div>
         <div class="division">
-          <div class="icon"><svg viewBox="0 0 26 26" fill="none"><rect x="8" y="2" width="10" height="22" rx="3" stroke="var(--blue-deep)" stroke-width="1.8"/><rect x="10.5" y="6" width="5" height="7" rx="1.4" fill="var(--blue-deep)"/></svg></div>
-          <div class="tag">DIVISION 03</div>
-          <h3>Lifts &amp; Escalators</h3>
-          <p>Installation, maintenance and modernization of lifts and escalators, backed by scheduled safety inspections and a fast callout response.</p>
-          <ul class="includes">
-            <li>Lift &amp; escalator maintenance contracts</li>
-            <li>Technical inspection &amp; safety compliance</li>
-            <li>Modernization &amp; retrofits</li>
-          </ul>
+          <div class="division__media">
+            <img src="images/lift-sheave.jpg" alt="Elevator machine room drive sheave and steel hoist cables">
+          </div>
+          <div class="division__badge"><svg viewBox="0 0 26 26" fill="none"><rect x="8" y="2" width="10" height="22" rx="3" stroke="var(--blue-deep)" stroke-width="1.8"/><rect x="10.5" y="6" width="5" height="7" rx="1.4" fill="var(--blue-deep)"/></svg></div>
+          <div class="division__body">
+            <div class="tag">DIVISION 03</div>
+            <h3>Lifts &amp; Escalators</h3>
+            <p>Installation, maintenance and modernization of lifts and escalators, backed by scheduled safety inspections and a fast callout response.</p>
+            <ul class="includes">
+              <li>Lift &amp; escalator maintenance contracts</li>
+              <li>Technical inspection &amp; safety compliance</li>
+              <li>Modernization &amp; retrofits</li>
+            </ul>
+          </div>
         </div>
         <div class="division">
-          <div class="icon"><svg viewBox="0 0 26 26" fill="none"><path d="M3 22V9L13 3L23 9V22" stroke="var(--blue-deep)" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 22V15H17V22" stroke="var(--blue-deep)" stroke-width="1.6"/></svg></div>
-          <div class="tag">DIVISION 04</div>
-          <h3>Installation, Commissioning &amp; Engineering Projects</h3>
-          <p>End-to-end delivery of industrial installations, site engineering and equipment installation through to commissioning and handover.</p>
-          <ul class="includes">
-            <li>Equipment installation</li>
-            <li>Installation &amp; commissioning</li>
-            <li>Site engineering &amp; project handover</li>
-          </ul>
+          <div class="division__media">
+            <img src="images/lift-interior.jpg" alt="Stainless steel elevator cab interior with call buttons and inspection certificate">
+          </div>
+          <div class="division__badge"><svg viewBox="0 0 26 26" fill="none"><path d="M3 22V9L13 3L23 9V22" stroke="var(--blue-deep)" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 22V15H17V22" stroke="var(--blue-deep)" stroke-width="1.6"/></svg></div>
+          <div class="division__body">
+            <div class="tag">DIVISION 04</div>
+            <h3>Installation, Commissioning &amp; Engineering Projects</h3>
+            <p>End-to-end delivery of industrial installations, site engineering and equipment installation through to commissioning and handover.</p>
+            <ul class="includes">
+              <li>Equipment installation</li>
+              <li>Installation &amp; commissioning</li>
+              <li>Site engineering &amp; project handover</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- IMPACT BANNER: full-bleed editorial interlude -->
+  <section class="impact-banner">
+    <div class="impact-banner__media" style="background-image:url('images/engineer-at-work.jpg');"></div>
+    <div class="impact-banner__overlay"></div>
+    <div class="wrap impact-banner__content">
+      <span class="kicker">Built for the field</span>
+      <h2>Engineers who stay accountable long after commissioning</h2>
+      <p>Every job closes with a written report and a maintenance history against the equipment, so the next visit — ours or anyone else's — starts from a known baseline, not a guess.</p>
+      <a href="#contact" class="btn-primary">Talk to an engineer</a>
     </div>
   </section>
 
@@ -382,6 +405,21 @@
       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     root.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
   });
+
+  // Header goes from transparent (over the hero photo) to solid once the
+  // page scrolls past the hero, like Kone/Schneider-style banner headers.
+  const header = document.getElementById('siteHeader');
+  function updateHeader(){
+    if (window.scrollY > 60) {
+      header.classList.add('header--solid');
+      header.classList.remove('header--transparent');
+    } else {
+      header.classList.add('header--transparent');
+      header.classList.remove('header--solid');
+    }
+  }
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
 
   const form = document.getElementById('contactForm');
   const note = document.getElementById('formNote');
